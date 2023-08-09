@@ -1,0 +1,32 @@
+@font-face {
+     src: url('../fonts/Bungee.ttf');
+ }
+
+ * {
+     -fx-font-family: 'Bungee';
+     -fx-text-fill: rgb(244, 172, 183);
+     -fx-effect: dropshadow(gaussian, rgb(157, 129, 137), 2, 1, 0.0, 0.0);
+ }
+
+.home {
+    -fx-background-color: rgb(255, 229, 217);
+}
+
+.home .title {
+    -fx-font-size: 12em;
+}
+
+.home .start,
+.home .leaderboard {
+    -fx-font-size: 2em;
+    -fx-background-color: rgb(216, 226, 220);
+}
+
+.home .leaderboard {
+    -fx-background-color: rgb(255, 202, 212);
+}
+
+.home .copy {
+    -fx-font-size: 1em;
+    -fx-effect: dropshadow(gaussian, rgb(157, 129, 137), 0.1, 0.1, 0.0, 0.0);
+}
