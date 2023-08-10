@@ -10,15 +10,17 @@ public class Application extends javafx.application.Application {
     private static Stage stage;
 
     private static Scene sceneHome;
+
     private static Scene sceneGame;
+
     private static Scene sceneLeaderboard;
 
     @Override
     public void start(Stage stage) throws IOException {
         Application.stage = stage;
 
-        Application.sceneHome = this.createNewScene("views/home-view.fxml");
-        Application.sceneGame = this.createNewScene("views/game-view.fxml");
+        Application.sceneHome = this.createNewScene("home-view.fxml");
+        Application.sceneGame = this.createNewScene("game-view.fxml");
 
         Application.stage.setScene(sceneHome);
         Application.stage.setTitle("2048");
@@ -26,7 +28,7 @@ public class Application extends javafx.application.Application {
     }
 
     private Scene createNewScene(String view) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource(view));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("views/" + view));
         Scene scene = new Scene(fxmlLoader.load(), 600, 800);
 
         scene.getStylesheets().add(getClass().getResource("/com/hirbu/game2048/styles/style.css").toExternalForm());
