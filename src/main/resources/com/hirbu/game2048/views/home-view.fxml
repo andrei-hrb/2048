@@ -8,7 +8,7 @@
 <?import javafx.scene.control.Button?>
 
 <StackPane xmlns:fx="http://javafx.com/fxml"
-           fx:controller="com.hirbu.game2048.HomeController"
+           fx:controller="com.hirbu.game2048.controllers.HomeController"
            styleClass="home"
 >
     <VBox alignment="TOP_CENTER" spacing="20.0">

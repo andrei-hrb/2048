@@ -17,8 +17,8 @@ public class Application extends javafx.application.Application {
     public void start(Stage stage) throws IOException {
         Application.stage = stage;
 
-        Application.sceneHome = this.createNewScene("home-view.fxml");
-        Application.sceneGame = this.createNewScene("game-view.fxml");
+        Application.sceneHome = this.createNewScene("views/home-view.fxml");
+        Application.sceneGame = this.createNewScene("views/game-view.fxml");
 
         Application.stage.setScene(sceneHome);
         Application.stage.setTitle("2048");
@@ -29,7 +29,7 @@ public class Application extends javafx.application.Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource(view));
         Scene scene = new Scene(fxmlLoader.load(), 600, 800);
 
-        scene.getStylesheets().add(getClass().getResource("/styles/style.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/com/hirbu/game2048/styles/style.css").toExternalForm());
 
         return scene;
     }

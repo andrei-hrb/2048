@@ -1,5 +1,6 @@
-package com.hirbu.game2048;
+package com.hirbu.game2048.controllers;
 
+import com.hirbu.game2048.Application;
 import javafx.fxml.FXML;
 import javafx.scene.layout.HBox;
 
@@ -9,12 +10,11 @@ public class HomeController {
 
     @FXML
     private void initialize() {
-        buttonWrapper.toFront();
+        this.buttonWrapper.toFront();
     }
 
     @FXML
     private void switchToGame() {
-        System.out.println("test");
         Application.switchToSceneGame();
     }
 }

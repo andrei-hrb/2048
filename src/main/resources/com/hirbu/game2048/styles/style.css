@@ -8,8 +8,12 @@
      -fx-effect: dropshadow(gaussian, rgb(157, 129, 137), 2, 1, 0.0, 0.0);
  }
 
-.home {
+StackPane {
     -fx-background-color: rgb(255, 229, 217);
+}
+
+.button:hover {
+    -fx-cursor: hand;
 }
 
 .home .title {
@@ -27,6 +31,17 @@
 }
 
 .home .copy {
-    -fx-font-size: 1em;
-    -fx-effect: dropshadow(gaussian, rgb(157, 129, 137), 0.1, 0.1, 0.0, 0.0);
+    -fx-font-size: 1.5em;
+}
+
+.game .scores {
+    -fx-font-size: 2em;
+}
+
+.game .scores VBox .score {
+    -fx-font-size: 1.5em;
+}
+
+.game .buttons .button {
+    -fx-background-color: rgb(216, 226, 220);
 }

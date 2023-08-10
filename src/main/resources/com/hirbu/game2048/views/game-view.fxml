@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.hirbu.game2048.controllers.GameController"
+           styleClass="game">
+    <HBox styleClass="scores" spacing="40.0" alignment="TOP_CENTER" fillHeight="false">
+        <padding>
+            <Insets top="20"/>
+        </padding>
+        <VBox alignment="TOP_CENTER" spacing="10">
+            <padding>
+                <Insets top="5" bottom="5" right="20" left="20"/>
+            </padding>
+            <Label text="Score"/>
+            <Label styleClass="score" text="0"/>
+        </VBox>
+        <VBox alignment="TOP_CENTER" spacing="10">
+            <padding>
+                <Insets top="5" bottom="5" right="20" left="20"/>
+            </padding>
+            <Label text="Best"/>
+            <Label styleClass="score" text="0"/>
+        </VBox>
+    </HBox>
+    <HBox styleClass="buttons" spacing="40.0" alignment="BOTTOM_CENTER" fillHeight="false">
+        <padding>
+            <Insets bottom="40"/>
+        </padding>
+        <Button fx:id="switchToHomeButton" onAction="#switchToHome" />
+        <Button fx:id="restartButton" onAction="#restart" />
+    </HBox>
+</StackPane>
